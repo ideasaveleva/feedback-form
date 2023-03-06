@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import InputMask from 'react-input-mask'
-import { customInput, ErrorTitle, Wrapper } from '../elements.js'
+
 import { Form } from './UI/Form.jsx'
 import { Input } from './UI/Input.jsx'
 import { Label } from './UI/Label.jsx'
 import { Button } from './UI/Button.jsx'
 import { Textarea } from './UI/Textarea.jsx'
+
+import { customInput, ErrorTitle, Wrapper } from '../elements.js'
 
 export const InputList = ({ setActive }) => {
   const [inputs, setInputs] = useState({ phone: '', username: '', message: '' })
