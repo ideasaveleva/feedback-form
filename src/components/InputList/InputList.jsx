@@ -5,7 +5,7 @@ import { CustomInput } from '../UI/CustomInput/CustomInput.jsx'
 import { LabelForInput } from '../UI/LabelForInput/LabelForInput.jsx'
 import { MyButton } from '../UI/MyButton/MyButton.jsx'
 import { MyTextarea } from '../UI/MyTextarea/MyTextarea.jsx'
-import { customInput, ErrorTitle, Wrapper } from './styles.jsx'
+import { customInput, ErrorTitle, Wrapper } from '../../elements.js'
 
 export const InputList = ({ setActive }) => {
   const [inputs, setInputs] = useState({ phone: '', username: '', message: '' })

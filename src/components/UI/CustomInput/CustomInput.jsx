@@ -1,5 +1,5 @@
 import { LabelForInput } from '../LabelForInput/LabelForInput.jsx'
-import { MyInput } from './styles.jsx'
+import { MyInput } from '../../../elements.js'
 
 export const CustomInput = ({ name, placeholder, onChange, value, style }) => {
   return (

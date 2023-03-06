@@ -1,4 +1,4 @@
-import { MyLabel } from './styles.jsx'
+import { MyLabel } from '../../../elements.js'
 
 export const LabelForInput = ({ name }) => {
   return (

@@ -1,5 +1,5 @@
 import { InputList } from '../InputList/InputList.jsx'
-import { ModalContainer, ModalContent } from './styles.jsx'
+import { ModalContainer, ModalContent } from '../../elements.js'
 
 export const Modal = ({ active, setActive }) => {
   return active ? (

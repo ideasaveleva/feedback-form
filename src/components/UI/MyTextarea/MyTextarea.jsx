@@ -1,5 +1,5 @@
 import { LabelForInput } from '../LabelForInput/LabelForInput.jsx'
-import { TextareaContainer } from './styles.jsx'
+import { TextareaContainer } from '../../../elements.js'
 
 export const MyTextarea = ({ placeholder, onChange, value, name }) => {
   return (
