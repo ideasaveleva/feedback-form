@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import InputMask from 'react-input-mask'
-import { Form } from '../Form/Form.jsx'
-import { CustomInput } from '../UI/CustomInput/CustomInput.jsx'
-import { LabelForInput } from '../UI/LabelForInput/LabelForInput.jsx'
-import { MyButton } from '../UI/MyButton/MyButton.jsx'
-import { MyTextarea } from '../UI/MyTextarea/MyTextarea.jsx'
-import { customInput, ErrorTitle, Wrapper } from '../../elements.js'
+import { customInput, ErrorTitle, Wrapper } from '../elements.js'
+import { Form } from './UI/Form.jsx'
+import { Input } from './UI/Input.jsx'
+import { Label } from './UI/Label.jsx'
+import { Button } from './UI/Button.jsx'
+import { Textarea } from './UI/Textarea.jsx'
 
 export const InputList = ({ setActive }) => {
   const [inputs, setInputs] = useState({ phone: '', username: '', message: '' })
@@ -85,7 +85,7 @@ export const InputList = ({ setActive }) => {
   return (
     <Wrapper>
       <Form>
-        <LabelForInput name={labelInput.phone.name} />
+        <Label name={labelInput.phone.name} />
         <InputMask
           style={customInput}
           mask='+7 (999) 999-99-99'
@@ -102,7 +102,7 @@ export const InputList = ({ setActive }) => {
         )}
       </Form>
       <Form>
-        <CustomInput
+        <Input
           name={labelInput.username.name}
           onChange={(username) => addTextHandler(username, 'username')}
           placeholder={labelInput.username.view}
@@ -115,7 +115,7 @@ export const InputList = ({ setActive }) => {
         )}
       </Form>
       <Form>
-        <MyTextarea
+        <Textarea
           name={labelInput.message.name}
           onChange={(message) => addTextHandler(message, 'message')}
           placeholder={labelInput.message.view}
@@ -134,7 +134,7 @@ export const InputList = ({ setActive }) => {
           Cообщение отправлено на сервер
         </h3>
       )} */}
-      <MyButton onClick={handleFormSubmit}>Отправить</MyButton>
+      <Button onClick={handleFormSubmit}>Отправить</Button>
     </Wrapper>
   )
 }
